@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+
+:root {
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Gray: hsl(0, 0%, 27%);
+  --primary-font: "League Spartan", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  height: 500px;
+}
+
+.navbar {
+  position: absolute;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+}
+
+.logo {
+  margin: 0 6rem;
+}
+
+.nav__lists {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  text-transform: lowercase;
+  color: var(--White);
+}
+
+.slides__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 120px;
+  background-color: var(--Black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1.5rem;
+}
+
+.slide__btn {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.slide__btn img {
+  width: 12px;
+}
+
+.slides,
+.slides img {
+  height: 100%;
+}
+
+.slides {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slides:not(:first-child) {
+  display: none;
+}
+
+.text__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.text__inner__container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.text__inner__container h2 {
+  font-size: 45px;
+  letter-spacing: -1.5px;
+  color: var(--Black);
+}
+
+.text__inner__container p {
+  font-size: 15px;
+  color: var(--Dark-Gray);
+  line-height: 1.25;
+}
+
+.text__inner__container .shop__now__button {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--Black);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.arrow__img img {
+  width: 35px;
+}
+
+.about__section {
+  display: flex;
+  width: 100%;
+}
